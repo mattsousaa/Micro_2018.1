@@ -92,7 +92,7 @@ int main(void)
 	DDRB =  0b00100010;					/* Only the LED pin PB5 and PB1 as output and the button on the PB0 as input. */
 	PORTB = 0b11011101;					/* Turn off LEDS and enables pull-ups on the other pins. */
 	
-	/*TCCR1B => Bit 6 – ICES1: Input Capture Edge Select.
+	/*TCCR1B => Bit 6 â€“ ICES1: Input Capture Edge Select.
 	
 	This bit selects which edge on the Input Capture pin (ICP1) that is used to trigger a capture event. When
 	the ICES1 bit is written to zero, a falling (negative) edge is used as trigger, and when the ICES1 bit is
@@ -121,12 +121,12 @@ int main(void)
 	
 	/*
 	
-	TIMSK1 => Bit 5 – ICIE: Input Capture Interrupt Enable.
+	TIMSK1 => Bit 5 â€“ ICIE: Input Capture Interrupt Enable.
 	
 	When this bit is written to '1', and the I-flag in the Status Register is set (interrupts globally enabled), the
 	Timer/Counter1 Input Capture interrupt is enabled.
 	
-	Bit 0 – TOIE: Overflow Interrupt Enable.
+	Bit 0 â€“ TOIE: Overflow Interrupt Enable.
 	
 	When this bit is written to '1', and the I-flag in the Status Register is set (interrupts globally enabled), the
 	Timer/Counter 1 Overflow interrupt is enabled.
