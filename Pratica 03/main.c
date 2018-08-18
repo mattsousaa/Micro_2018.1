@@ -43,7 +43,7 @@ char DS7[] = {          //pgfedcba
 						0b00000111, //7
 						0b01111111, //8
 						0b01101111, //9
-						0b01100011, //A 'บ'
+						0b01100011, //A 'ยบ'
 						0b00111001, //B 'C'
 						0b00111000, //C 'L'
 						0b00011100  //D 'u'
@@ -157,7 +157,7 @@ ISR(TIMER0_COMPA_vect){
 				DISP[x] = DS7[DEC_T];
 				x++;
 				timer++;
-				} else{
+			} else{
 				PORTC &= ~(1<<PORTC2);
 				PORTC |= 0x8;
 				PORTD = DISP[x];
@@ -183,7 +183,7 @@ ISR(TIMER0_COMPA_vect){
 					DISP[y] = DS7[12];
 					y++;
 					timer2++;
-					} else{
+				} else{
 					PORTC &= ~(1<<PORTC2);
 					PORTC |= 0x8;
 					PORTD = DISP[y];
