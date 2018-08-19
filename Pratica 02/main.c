@@ -158,7 +158,7 @@ ISR(TIMER1_CAPT_vect){
 	
 	if(estado == 0 || estado == 1){			
 		sem1 = 1;
-		} else if(estado == 2 || estado == 3){	
+	} else if(estado == 2 || estado == 3){	
 		sem2 = 1;
 	}
 }
